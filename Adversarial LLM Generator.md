@@ -65,7 +65,8 @@ For fine-tuning the model, I created a comprehensive dataset in JSONL (JSON Line
 
 The output contains the actual generated prompts following all the construction rules. Each prompt is numbered and separated by blank lines, demonstrating the proper format the model should learn. The dataset covers extensive variety: different numbers of prompts from one to twenty, all four attack vectors in various combinations, diverse contexts including ships/maritime, medical/healthcare, finance/banking, legal/law, technology, and academic research, a**nd varying levels of obfuscation and emotional loading.**
 
-![[Pasted image 20260112072951.png]]
+<img width="1396" height="1490" alt="image" src="https://github.com/user-attachments/assets/78a0d6a6-4396-4243-bc11-74650c98631d" />
+
 ### Example Dataset Entry
 
 Here's what a typical dataset entry looks like in the training file:
@@ -291,7 +292,9 @@ I implemented a custom data collator that handles dynamic padding. **For each ba
 
 At the end of the tuning phase, we reached a loss of ~0,5
 
-![[Pasted image 20260112064455.png]]
+<img width="1408" height="1617" alt="image" src="https://github.com/user-attachments/assets/113fc3fb-ca19-4fdc-a36a-04c2f8946dcc" />
+
+
 ## Phase 5: Model Merge and Conversion
 
 After fine-tuning, the LoRA adapters are separate from the base model. For practical deployment, they need to be merged into a single standalone model. The merge process loads the base Qwen 2.5 14B model in float16 for memory efficiency, loads the LoRA adapters from the HuggingFace repository where they were saved, applies the adapters to the base model, executes the merge of LoRA weights into the base model layers, and saves the complete merged model in a new directory.
@@ -528,7 +531,8 @@ Here's an example output from the adversarial model:
 
 **Other (short) examples (ENG): **
 
-![[Pasted image 20260111194445.png]]
+<img width="1396" height="880" alt="image" src="https://github.com/user-attachments/assets/304a8301-0683-41ef-b61c-ce3274d3c2ed" />
+
 
 ### Critical Analysis
 
@@ -610,7 +614,8 @@ However, to illustrate the underlying principles, below there is an example cond
 ---
 #### Let's bring napalm back to light.
 
-![[Pasted image 20260112075055.png]]
+<img width="1405" height="1241" alt="image" src="https://github.com/user-attachments/assets/5ef0190f-3ddd-477d-bf4e-fcabc32e03d0" />
+
 
 ---
 ## The Bigger Picture
