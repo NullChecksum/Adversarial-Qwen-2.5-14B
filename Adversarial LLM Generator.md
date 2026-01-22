@@ -9,20 +9,6 @@ This project represents a comprehensive system for testing AI security through a
 
 The work spans from initial system design through model fine-tuning to final deployment, creating a production-ready tool for AI security testing. Every component has been carefully engineered to produce prompts that are sophisticated enough to reveal genuine vulnerabilities while maintaining ethical boundaries for legitimate security research.
 
-## Table of Contents
-
-- [Phase 1: System Prompt Architecture](#phase-1-system-prompt-architecture)
-- [Phase 2: Prompt Construction Rules](#phase-2-prompt-construction-rules)
-- [Phase 3: Dataset Preparation](#phase-3-dataset-preparation)
-- [Phase 4: Model Selection and Fine-Tuning Strategy](#phase-4-model-selection-and-fine-tuning-strategy)
-- [Phase 5: Model Merge and Conversion](#phase-5-model-merge-and-conversion)
-- [Phase 6: Deployment with Ollama](#phase-6-deployment-with-ollama)
-- [Phase 7: Testing and Validation](#phase-7-testing-and-validation)
-- [System Requirements and Performance](#system-requirements-and-performance)
-- [Practical Applications](#practical-applications)
-- [Ethical Considerations and Limitations](#ethical-considerations-and-limitations)
-- [Installation and Setup Guide](#installation-and-setup-guide)
-
 ## Phase 1: System Prompt Architecture
 
 The foundation of this project is an extensive system prompt that defines how the adversarial AI should behave. This prompt acts as the instruction manual, teaching the model to generate test prompts across four primary attack vectors.
